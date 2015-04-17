@@ -31,7 +31,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02900000 --tags_offset 0x02700000
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
-TARGET_KERNEL_CONFIG := code_blue_hammerhead-l_defconfig
+TARGET_KERNEL_CONFIG := slim_hammerhead_defconfig
 
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 KERNEL_TOOLCHAIN := "/home/gwx/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9/bin/"
