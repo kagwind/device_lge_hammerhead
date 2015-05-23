@@ -110,8 +110,11 @@ BOARD_SEPOLICY_DIRS += \
        device/lge/hammerhead/sepolicy
 
 # Define kernel config for inline building
-TARGET_KERNEL_CONFIG := slim_hammerhead_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+TARGET_KERNEL_CONFIG := code_blue_hammerhead-l_defconfig
+TARGET_KERNEL_SOURCE := /home/gwx/Data/android/codeblue
+
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+KERNEL_TOOLCHAIN := "/home/gwx/Data/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9/bin/"
 
 # The list below is order dependent
 BOARD_SEPOLICY_UNION += \
