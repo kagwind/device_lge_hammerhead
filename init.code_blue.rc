@@ -1,0 +1,11 @@
+# Code_Blue Extras
+
+# Run runparts
+start userinit
+
+# runparts (/system/etc/init.d)
+service userinit /system/xbin/busybox run-parts /system/etc/init.d
+	oneshot
+	class late_start
+	user root
+	group root
